@@ -1,11 +1,9 @@
 // Import stylesheets
 import './style.css';
 
-// Write TypeScript code!
-const CANVAS: HTMLElement = document.getElementById('canvas');
-const SIZE: number = 10;
+import { CreateCanvas } from './ts/createCanvas';
+import { DrawPlayGround } from './ts/drawPlayground';
 
-const WIDTH: number = 500;
-const HEIGHT: number = 300;
-const ROWS: number = CANVAS.clientHeight / SIZE;
-const COLS: number = CANVAS.clientWidth / SIZE;
+const canvas = new CreateCanvas('');
+const playground = new DrawPlayGround(canvas.Canvas, 10);
+playground.draw();

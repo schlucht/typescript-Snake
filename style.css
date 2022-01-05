@@ -1,3 +1,11 @@
-h1, h2 {
+h1,
+h2 {
   font-family: Lato;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: olive;
+  height: 100vh;
 }
