@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20vh 60vh 20vh;
+    background-color: red;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
